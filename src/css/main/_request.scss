@@ -1,0 +1,47 @@
+&__request{
+  position: relative;
+  display: flex;
+  width: 100%;
+  background: url("../img/main_request_background.png") top center no-repeat;
+  flex-direction: column;
+  padding: 100px 0;
+  align-items: center;
+  justify-content: center;
+  .request{
+
+    &__title{
+      &--white{
+        @include section_title;
+        color: #fff;
+        & hr{
+          border-top: 3px solid #fff;
+        }
+      }
+    }
+    &__form{
+      width: 100%;
+      max-width: 1170px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 50px 0 15px;
+
+      & input{
+        @include request_input;
+      }
+      & input[type=submit]{
+        @include request_button;
+      }
+    }
+    &__desc{
+      color: #ffffff;
+      font-family: "Futura Book C";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.header{
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @import "info";
+  @import "nav";
+}
