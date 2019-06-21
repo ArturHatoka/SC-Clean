@@ -389,7 +389,7 @@
         }
       }
     }
-    &__body{
+    &__wrap{
       position: relative;
       display: flex;
       width: 100%;
@@ -398,7 +398,67 @@
       align-items: flex-start;
       flex-direction: column;
 
+    }
+    &__sorting{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 270px;
 
+      & .sorting{
+
+        &__select{
+          width: 100%;
+          color: $dark_blue;
+          font-family: "Futura Book C";
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20px;
+          padding: 20px 30px;
+          display: flex;
+          cursor: pointer;
+          border: 1px solid #e9e9e9;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          background: url("../img/header/arrow.svg") no-repeat 235px center;
+        }
+        &__option{
+          font-size: 16px;
+          padding: 20px 30px;
+          &:checked{
+            color: #858585;
+          }
+          &:hover{
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    &__item{
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 10px 0 40px;
+
+      & .item{
+
+        &__wrap{
+          width: 100%;
+          max-width: 270px;
+          height: 200px;
+          box-shadow: 0 3px 20px rgba(120, 120, 120, 0.15);
+          background-color: #ffffff;
+          margin: 30px 0;
+          &:nth-child(3n+2){
+            margin: 30px 30px;
+          }
+        }
+      }
     }
   }
 }
