@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Futura Book C";
   src: url("../fonts/FuturaBookC.ttf") format("truetype");
@@ -38,6 +39,14 @@
   src: url("../fonts/FuturaMediumC-italic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold; }
+@font-face {
+  font-family: "PT Rouble Sans";
+  src: url("../fonts/RUBSN.otf") format("opentype"); }
+.rub_icon {
+  font-family: "PT Rouble Sans";
+  font-size: 16px;
+  font-style: normal; }
+
 *, *:after, *:before {
   margin: 0;
   box-sizing: border-box; }
@@ -365,6 +374,11 @@ body {
     height: 100%;
     padding: 0 5px; }
     .header .nav__point.active {
+      border-top: 3px solid #00adef;
+      border-radius: 1px;
+      transform: translateY(-2px);
+      height: 105%; }
+    .header .nav__point.visit {
       border-top: 3px solid #00adef;
       border-radius: 1px;
       transform: translateY(-2px);
@@ -1735,6 +1749,330 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center; }
+  .main__category {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 1170px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 50px 0; }
+    .main__category .category__sidebar {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 270px;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column; }
+      .main__category .category__sidebar .sidebar__box {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        border: 1px solid #e9e9e9;
+        height: auto;
+        margin-bottom: 30px; }
+        .main__category .category__sidebar .sidebar__box .box__title {
+          background-color: #00adef;
+          padding: 20px 30px;
+          color: #ffffff;
+          font-family: "Futura Demi C";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 20px; }
+        .main__category .category__sidebar .sidebar__box .box__categ {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          list-style: none;
+          padding: 15px 30px 30px; }
+          .main__category .category__sidebar .sidebar__box .box__categ .categ__link {
+            color: #001334;
+            font-family: "Futura Book C";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 38px;
+            text-decoration: none; }
+            .main__category .category__sidebar .sidebar__box .box__categ .categ__link sup {
+              font-size: 11px; }
+            .main__category .category__sidebar .sidebar__box .box__categ .categ__link:hover {
+              font-weight: 600; }
+              .main__category .category__sidebar .sidebar__box .box__categ .categ__link:hover sup {
+                color: #00aeff;
+                font-weight: 300;
+                line-height: 38px; }
+        .main__category .category__sidebar .sidebar__box .box__price_form {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          padding: 30px; }
+          .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range {
+            outline: none;
+            width: 100%;
+            -webkit-appearance: none;
+            background-color: rgba(233, 233, 233, 0); }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-webkit-slider-thumb {
+              -webkit-appearance: none; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range:focus {
+              outline: none;
+              /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */ }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-ms-track {
+              width: 100%;
+              cursor: pointer;
+              background: transparent;
+              /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
+              border-color: transparent;
+              color: transparent; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-webkit-slider-thumb {
+              -webkit-appearance: none;
+              border: 0 solid rgba(0, 0, 0, 0);
+              height: 10px;
+              width: 10px;
+              border-radius: 50%;
+              background: #00adef;
+              cursor: ew-resize;
+              margin-top: -3px;
+              /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
+              box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-moz-range-thumb {
+              cursor: ew-resize;
+              box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
+              border: 0 none;
+              height: 10px;
+              width: 10px;
+              border-radius: 50%;
+              background: #ffffff; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-ms-thumb {
+              cursor: ew-resize;
+              box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d;
+              border: 0 none;
+              height: 10px;
+              width: 10px;
+              border-radius: 50%;
+              background: #ffffff; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-webkit-slider-runnable-track {
+              width: 100%;
+              height: 8px;
+              box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d;
+              background: #00adef;
+              border-radius: 1.3px;
+              border: 0 solid #010101; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range:focus::-webkit-slider-runnable-track {
+              background: #00adef; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-moz-range-track {
+              width: 100%;
+              height: 4px;
+              box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d;
+              background: #00adef;
+              border-radius: 1.3px;
+              border: 0 solid #010101; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-ms-track {
+              cursor: ew-resize;
+              width: 100%;
+              height: 2px;
+              background: transparent;
+              border-color: transparent;
+              border-width: 16px 0;
+              color: transparent; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-ms-fill-lower {
+              background: #00adef;
+              border: 0 solid #010101;
+              border-radius: 2.6px;
+              box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range:focus::-ms-fill-lower {
+              background: #00adef; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-ms-fill-upper {
+              background: #00adef;
+              border: 0 solid #010101;
+              border-radius: 2.6px;
+              box-shadow: 0 0 0 #000000, 0 0 0 #0d0d0d; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range:focus::-ms-fill-upper {
+              background: #00adef; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-webkit-slider-runnable-track {
+              height: 4px;
+              -webkit-appearance: none;
+              color: #00adef;
+              margin-top: -1px;
+              background-color: #e9e9e9; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-moz-range-progress {
+              background-color: #00adef; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-moz-range-thumb {
+              background: #00adef; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-moz-range-track {
+              background-color: #e9e9e9; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-ms-fill-lower {
+              background-color: #e9e9e9; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range::-ms-fill-upper {
+              background-color: #00adef; }
+          .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range_value {
+            color: #858585;
+            font-family: "Futura Book C";
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 48px; }
+            .main__category .category__sidebar .sidebar__box .box__price_form .price_form__range_value .rub_icon {
+              font-size: 11px;
+              margin-left: 1px; }
+          .main__category .category__sidebar .sidebar__box .box__price_form .price_form__wrap {
+            position: relative;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px; }
+          .main__category .category__sidebar .sidebar__box .box__price_form .price_form__input {
+            position: relative;
+            display: flex;
+            width: 48%;
+            padding: 10px;
+            border: 1px solid #e9e9e9; }
+        .main__category .category__sidebar .sidebar__box .box__catal {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          list-style: none;
+          padding: 0 0 40px 0; }
+          .main__category .category__sidebar .sidebar__box .box__catal .put_in:after {
+            position: relative;
+            display: inline-block;
+            content: url("../img/header/arrow.svg");
+            margin-left: 10px;
+            transform: translateY(-10%); }
+          .main__category .category__sidebar .sidebar__box .box__catal li {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
+            width: 100%; }
+          .main__category .category__sidebar .sidebar__box .box__catal .catal__point {
+            color: #001334;
+            font-family: "Futura Book C";
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 18px;
+            text-decoration: none;
+            margin: 0 30px 0 30px;
+            width: calc(100% - 60px); }
+            .main__category .category__sidebar .sidebar__box .box__catal .catal__point:hover {
+              font-weight: 600; }
+          .main__category .category__sidebar .sidebar__box .box__catal .catal__deep {
+            position: relative;
+            display: none;
+            flex-direction: column;
+            margin-top: 15px;
+            padding: 0 0 30px 0;
+            list-style: none;
+            background-color: #f8f8f8; }
+            .main__category .category__sidebar .sidebar__box .box__catal .catal__deep.active {
+              display: flex; }
+            .main__category .category__sidebar .sidebar__box .box__catal .catal__deep li {
+              padding-top: 20px; }
+            .main__category .category__sidebar .sidebar__box .box__catal .catal__deep .deep__point {
+              color: #001334;
+              font-family: "Futura Book C";
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 18px;
+              text-decoration: none;
+              margin: 0 30px 0 30px; }
+              .main__category .category__sidebar .sidebar__box .box__catal .catal__deep .deep__point:hover {
+                font-weight: 600; }
+            .main__category .category__sidebar .sidebar__box .box__catal .catal__deep .deep__down {
+              position: relative;
+              display: none;
+              width: 100%;
+              padding-left: 50px;
+              flex-direction: column; }
+              .main__category .category__sidebar .sidebar__box .box__catal .catal__deep .deep__down.active {
+                display: flex; }
+              .main__category .category__sidebar .sidebar__box .box__catal .catal__deep .deep__down .down__point {
+                color: #001334;
+                font-family: "Futura Book C";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 18px;
+                text-decoration: underline; }
+                .main__category .category__sidebar .sidebar__box .box__catal .catal__deep .deep__down .down__point:hover {
+                  font-weight: 600; }
+      .main__category .category__sidebar .sidebar__advert {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .main__category .category__sidebar .sidebar__advert .advert__box {
+          position: relative;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden; }
+        .main__category .category__sidebar .sidebar__advert .advert__act {
+          position: absolute;
+          display: flex;
+          z-index: 400;
+          top: -20px;
+          left: -10px;
+          color: #ffffff;
+          font-family: "Futura Demi C";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 20px;
+          height: 90px;
+          width: 90px;
+          background-color: #39b61b;
+          align-content: center;
+          justify-content: center;
+          flex-direction: column;
+          border-radius: 50%;
+          text-align: center; }
+        .main__category .category__sidebar .sidebar__advert .advert__img {
+          position: relative;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          z-index: 300; }
+        .main__category .category__sidebar .sidebar__advert .advert__desc {
+          color: #001334;
+          font-family: "Futura Book C";
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 20px;
+          margin: 15px 0 20px; }
+        .main__category .category__sidebar .sidebar__advert .advert__button {
+          box-shadow: 0 3px 21px rgba(0, 192, 255, 0.42);
+          border-radius: 35px;
+          background-color: #00aeff;
+          color: #fefefe;
+          font-family: "Futura Demi C";
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: uppercase;
+          letter-spacing: 0.7px;
+          padding: 17px 48px;
+          text-decoration: none;
+          transition: .2s;
+          padding: 17px 0;
+          text-align: center;
+          width: 100%; }
+          .main__category .category__sidebar .sidebar__advert .advert__button:hover {
+            transition: .2s;
+            background-color: #00a2ff;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+    .main__category .category__body {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 870px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column; }
 
 .footer {
   position: relative;
@@ -1920,7 +2258,8 @@ body {
           display: flex;
           width: max-content; }
           .footer__work_time .work_time__box .box__row span sup {
-            font-size: 10px; }
+            font-size: 10px;
+            margin-right: 3px; }
           .footer__work_time .work_time__box .box__row span:first-child {
             margin-right: 5px; }
     .footer__work_time .work_time__link {

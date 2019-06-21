@@ -115,5 +115,28 @@ $(document).ready(function () {
         ]
     });
 
+    $(".box__catal ul").parent().children('a').addClass('put_in');
+
+    $('.box__catal li').hover(
+        function () {
+            $(this).children('ul').addClass("active");
+        },
+        function () {
+            $(this).children('ul').removeClass("active");
+        }
+    );
+
 });
 
+
+
+$(function() {
+    var el;
+    $("#rng").change(function() {
+        el = $(this);
+        el
+            .next(".price_form__range_value").children('#ong')
+            .text(el.val());
+    })
+        .trigger('change');
+});

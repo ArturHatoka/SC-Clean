@@ -288,3 +288,13 @@ $gray: #858585;
   text-transform: uppercase;
   margin: 15px 0 30px;
 }
+
+@mixin sidebar_title{
+  background-color: $light_blue;
+  padding: 20px 30px;
+  color: #ffffff;
+  font-family: "Futura Demi C";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}

@@ -50,3 +50,12 @@
   font-style: italic;
   font-weight: bold;
 }
+@font-face {
+  font-family: "PT Rouble Sans";
+  src: url("../fonts/RUBSN.otf") format("opentype");
+}
+.rub_icon{
+  font-family: "PT Rouble Sans";
+  font-size: 16px;
+  font-style: normal;
+}
