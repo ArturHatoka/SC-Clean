@@ -114,9 +114,9 @@ $(document).ready(function () {
             }
         ]
     });
-
+    //добавление стрелки при наличии вложенности в сайдбаре каталога
     $(".box__catal ul").parent().children('a').addClass('put_in');
-
+    //раскрытие пунктов сайдбара каталога при наведении
     $('.box__catal li').hover(
         function () {
             $(this).children('ul').addClass("active");
@@ -128,8 +128,7 @@ $(document).ready(function () {
 
 });
 
-
-
+//вывод значения "range" цены в сайдбаре
 $(function() {
     var el;
     $("#rng").change(function() {
