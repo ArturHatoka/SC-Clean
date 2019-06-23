@@ -125,7 +125,15 @@ $(document).ready(function () {
             $(this).children('ul').removeClass("active");
         }
     );
-
+    //вкладки в карточке товара
+    $(".desc__point").click(
+        function () {
+            $(".desc__point").removeClass('active');
+            $(this).toggleClass('active');
+            $(".desc__deep").removeClass('active');
+            $(this).children('.desc__deep').toggleClass('active')
+        }
+    );
 });
 
 //вывод значения "range" цены в сайдбаре
@@ -139,3 +147,5 @@ $(function() {
     })
         .trigger('change');
 });
+
+
