@@ -199,16 +199,11 @@
             & span{
               position: relative;
               display: flex;
-              width: max-content;
+              width: 100%;
+              max-width: max-content;
               & sup{
                 font-size: 10px;
                 margin-right: 3px;
-              }
-              &:first-child{
-                min-width: 44px;
-              }
-              &:last-child{
-                min-width: 72px;
               }
             }
           }
