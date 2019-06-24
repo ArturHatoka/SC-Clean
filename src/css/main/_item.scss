@@ -183,6 +183,9 @@
           top: 100%;
           position: absolute;
           display: none;
+          padding: 35px 30px;
+          width: 100%;
+
           &.active{
             display: flex;
           }

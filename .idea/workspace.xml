@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3e68271-e8c3-4057-b3d8-7b42abfcc32e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item.html" beforeDir="false" afterPath="$PROJECT_DIR$/item.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main/_item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main/_item.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/scripts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/item.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="279" column="26" selection-start-line="279" selection-start-column="26" selection-end-line="279" selection-end-column="26" />
+            <state relative-caret-position="251">
+              <caret line="266" column="32" lean-forward="true" selection-start-line="266" selection-start-column="32" selection-end-line="266" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -51,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/main/_item.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="153" column="22" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
+            <state relative-caret-position="654">
+              <caret line="187" selection-start-line="187" selection-end-line="187" />
             </state>
           </provider>
         </entry>
@@ -150,9 +147,9 @@
         <option value="$PROJECT_DIR$/src/css/main/_category.scss" />
         <option value="$PROJECT_DIR$/src/css/main/_sidebar.scss" />
         <option value="$PROJECT_DIR$/src/css/main/_main.scss" />
-        <option value="$PROJECT_DIR$/src/css/main/_item.scss" />
         <option value="$PROJECT_DIR$/src/js/scripts.js" />
         <option value="$PROJECT_DIR$/item.html" />
+        <option value="$PROJECT_DIR$/src/css/main/_item.scss" />
       </list>
     </option>
   </component>
@@ -217,23 +214,22 @@
       <workItem from="1561234373877" duration="6292000" />
       <workItem from="1561291798204" duration="5481000" />
       <workItem from="1561319728003" duration="5450000" />
-      <workItem from="1561357285508" duration="1850000" />
+      <workItem from="1561357285508" duration="3115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105677000" />
+    <option name="totallyTimeSpent" value="106942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17004265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32843137" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -527,15 +523,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/item.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="279" column="26" selection-start-line="279" selection-start-column="26" selection-end-line="279" selection-end-column="26" />
+        <state relative-caret-position="251">
+          <caret line="266" column="32" lean-forward="true" selection-start-line="266" selection-start-column="32" selection-end-line="266" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/main/_item.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="153" column="22" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
+        <state relative-caret-position="654">
+          <caret line="187" selection-start-line="187" selection-end-line="187" />
         </state>
       </provider>
     </entry>

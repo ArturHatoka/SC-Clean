@@ -2822,7 +2822,9 @@ body {
       .main__item .item__desc .desc__deep {
         top: 100%;
         position: absolute;
-        display: none; }
+        display: none;
+        padding: 35px 30px;
+        width: 100%; }
         .main__item .item__desc .desc__deep.active {
           display: flex; }
 
