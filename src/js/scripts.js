@@ -134,6 +134,57 @@ $(document).ready(function () {
             $(this).next('.desc__deep').toggleClass('active')
         }
     );
+    //слайдер сопутствующих товаров
+    $(".adds__slider").slick({
+        infinite: true,
+        dotsClass: 'slider__dots slick-dots',
+        prevArrow: '<button type="button" class="slider__prev slick-prev">Previous</button>' ,
+        nextArrow: '<button type="button" class="slider__next slick-next">Next</button>' ,
+        arrows: true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        // variableWidth: true,
+        autoplay:true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+    //добавление плашки добавлен в корзину для сопутки
+    $(".adds__cart").click(
+        function (e) {
+            e.preventDefault();
+            $(this).parent().parent().children(".adds__delete").addClass("added_to_cart");
+        }
+    );
+    //удаление плашки добавлен в корзину
+    $(".delete__button").click(
+        function (e) {
+            e.preventDefault();
+            $(this).parent().removeClass("added_to_cart");
+        }
+    );
 });
 
 //вывод значения "range" цены в сайдбаре
