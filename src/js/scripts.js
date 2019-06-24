@@ -131,7 +131,7 @@ $(document).ready(function () {
             $(".desc__point").removeClass('active');
             $(this).toggleClass('active');
             $(".desc__deep").removeClass('active');
-            $(this).children('.desc__deep').toggleClass('active')
+            $(this).next('.desc__deep').toggleClass('active')
         }
     );
 });
