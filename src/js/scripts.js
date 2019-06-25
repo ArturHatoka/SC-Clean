@@ -185,6 +185,20 @@ $(document).ready(function () {
             $(this).parent().removeClass("added_to_cart");
         }
     );
+    //вызов всплывающего меню на адаптиве
+    $(".nav__menu").click(
+        function (e) {
+            e.preventDefault();
+            $(".menu__pop-up").addClass("active");
+        }
+    );
+    //закрыть всплывающее меню на адаптиве
+    $(".header__close").click(
+        function (e) {
+         e.preventDefault();
+         $(".menu__pop-up").removeClass("active");
+        }
+    );
 });
 
 //вывод значения "range" цены в сайдбаре

@@ -1,0 +1,11 @@
+@media screen and (max-width: 1200px) {
+  .header__info {
+    max-width: 940px; }
+  .header__nav {
+    max-width: 940px; }
+    .header__nav .nav__menu {
+      display: flex; }
+    .header__nav .nav__points {
+      display: none; }
+    .header__nav .nav__search {
+      width: 77%; } }

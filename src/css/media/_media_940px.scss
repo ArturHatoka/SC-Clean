@@ -1,0 +1,27 @@
+@media screen and (max-width: 1200px){
+
+  .header{
+
+    &__info{
+
+      max-width: 940px;
+    }
+    &__nav{
+      max-width: 940px;
+
+      & .nav{
+
+        &__menu{
+          display: flex;
+        }
+        &__points{
+          display: none;
+        }
+        &__search{
+          width: 77%;
+        }
+      }
+    }
+  }
+
+}
