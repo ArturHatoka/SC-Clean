@@ -24,4 +24,65 @@
     }
   }
 
+  .main{
+
+    &__intro{
+
+      min-height: 475px;
+
+    }
+
+    & .intro{
+
+      &__title{
+
+        & br{
+          display: block;
+        }
+      }
+    }
+    & .service{
+
+      &__wrap{
+        max-width: 980px;
+      }
+    }
+    & .goods{
+
+      &__wrap{
+        max-width: 980px;
+      }
+    }
+
+    & .price{
+
+      &__wrap{
+        max-width: 980px;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+      &__box{
+        width: 33%;
+        margin: 10px;
+        padding: 60px 30px;
+      }
+    }
+    & .clients{
+
+      &__slider{
+        width: 80%;
+      }
+      &__text{
+        width: 90%;
+      }
+    }
+    & .reviews{
+
+      &__slider{
+        width: 80%;
+      }
+    }
+  }
 }

@@ -537,12 +537,18 @@ body {
     display: none;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
     z-index: 500;
     justify-content: flex-start;
     align-items: flex-start; }
     .header .menu__pop-up.active {
       display: flex; }
+  .header .menu__background {
+    background: rgba(0, 0, 0, 0.8);
+    width: 75%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh; }
   .header .menu__wrap {
     position: relative;
     display: flex;
@@ -700,7 +706,10 @@ body {
       font-family: "Futura Demi C";
       font-size: 64px;
       font-weight: 400;
-      margin-bottom: 17px; }
+      margin-bottom: 17px;
+      text-align: center; }
+      .main__intro .intro__title br {
+        display: none; }
     .main__intro .intro__subtitle {
       color: #001334;
       font-family: "Futura Book C";

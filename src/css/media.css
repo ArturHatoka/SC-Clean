@@ -8,4 +8,29 @@
     .header__nav .nav__points {
       display: none; }
     .header__nav .nav__search {
-      width: 77%; } }
+      width: 77%; }
+
+  .main__intro {
+    min-height: 475px; }
+  .main .intro__title br {
+    display: block; }
+  .main .service__wrap {
+    max-width: 980px; }
+  .main .goods__wrap {
+    max-width: 980px; }
+  .main .price__wrap {
+    max-width: 980px;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center; }
+  .main .price__box {
+    width: 33%;
+    margin: 10px;
+    padding: 60px 30px; }
+  .main .clients__slider {
+    width: 80%; }
+  .main .clients__text {
+    width: 90%; }
+  .main .reviews__slider {
+    width: 80%; } }

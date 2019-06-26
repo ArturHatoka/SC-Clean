@@ -16,6 +16,10 @@
       font-size: 64px;
       font-weight: 400;
       margin-bottom: 17px;
+      text-align: center;
+      & br{
+        display: none;
+      }
     }
     &__subtitle{
       color: $dark_blue;

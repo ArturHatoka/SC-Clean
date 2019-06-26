@@ -199,6 +199,12 @@ $(document).ready(function () {
          $(".menu__pop-up").removeClass("active");
         }
     );
+    //закрыть всплывающее меню при клике на фон
+    $(".menu__background").click(
+        function () {
+            $(this).parent().removeClass("active");
+        }
+    );
 });
 
 //вывод значения "range" цены в сайдбаре
