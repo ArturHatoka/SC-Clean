@@ -15,6 +15,9 @@
     }
     &__slider{
       @include slider;
+      & .slider__next, .slider__prev{
+        top: 38.5%;
+      }
     }
     &__img{
       position: relative;

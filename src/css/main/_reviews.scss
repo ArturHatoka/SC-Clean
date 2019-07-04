@@ -25,7 +25,10 @@
       @include section_title;
     }
     &__slider{
-      @include slider
+      @include slider;
+      & .slider__next, .slider__prev{
+        top: 45%;
+      }
     }
 
     &__img{

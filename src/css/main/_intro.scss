@@ -30,6 +30,8 @@
     }
     &__button{
       @include button_feel;
+      border: 0 none;
+      outline: none;
     }
   }
 }

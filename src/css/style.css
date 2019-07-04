@@ -729,7 +729,9 @@ body {
       padding: 17px 48px;
       text-decoration: none;
       transition: .2s;
-      text-align: center; }
+      text-align: center;
+      border: 0 none;
+      outline: none; }
       .main__intro .intro__button:hover {
         transition: .2s;
         background-color: #00a2ff;
@@ -894,7 +896,8 @@ body {
         position: relative;
         display: flex;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        filter: brightness(0.8); }
       .main__service .service__box .box__wrap {
         position: absolute;
         display: flex;
@@ -928,8 +931,7 @@ body {
         border-radius: 35px;
         border: 2px solid #ffffff;
         transition: .2s;
-        text-shadow: 0 0 2px black;
-        box-shadow: 0 0 2px black; }
+        text-shadow: 0 0 2px black; }
         .main__service .service__box .box__button:hover {
           transition: .2s;
           border: 2px solid #00adef;
@@ -995,7 +997,8 @@ body {
         position: relative;
         display: flex;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        filter: brightness(0.8); }
       .main__goods .goods__box .box__wrap {
         position: absolute;
         display: flex;
@@ -1029,8 +1032,7 @@ body {
         border-radius: 35px;
         border: 2px solid #ffffff;
         transition: .2s;
-        text-shadow: 0 0 2px black;
-        box-shadow: 0 0 2px black; }
+        text-shadow: 0 0 2px black; }
         .main__goods .goods__box .box__button:hover {
           transition: .2s;
           border: 2px solid #00adef;
@@ -1244,6 +1246,8 @@ body {
           transition: .2s;
           transform: rotate(45deg);
           margin-right: 15%; }
+      .main__clients .clients__slider .slider__next, .main__clients .clients__slider .slider__prev {
+        top: 38.5%; }
     .main__clients .clients__img {
       position: relative;
       display: flex;
@@ -1398,6 +1402,8 @@ body {
           transition: .2s;
           transform: rotate(45deg);
           margin-right: 15%; }
+      .main__reviews .reviews__slider .slider__next, .main__reviews .reviews__slider .slider__prev {
+        top: 45%; }
     .main__reviews .reviews__img {
       position: relative;
       display: flex;
@@ -1544,7 +1550,6 @@ body {
       border: 2px solid #ffffff;
       transition: .2s;
       text-shadow: 0 0 2px black;
-      box-shadow: 0 0 2px black;
       color: #00adef;
       font-family: "Futura Demi C";
       font-size: 14px;
@@ -1582,11 +1587,13 @@ body {
     position: relative;
     display: flex;
     width: 100%;
-    background: url("../img/main_request_background.png") top center no-repeat;
+    background: url("../img/main_request_background.png") center center no-repeat, #2a9010;
     flex-direction: column;
     padding: 100px 0;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    background-size: cover;
+    background-blend-mode: multiply; }
     .main__request .request__title--white {
       color: #001334;
       font-family: "Futura Demi C";
@@ -1654,7 +1661,6 @@ body {
         border: 2px solid #ffffff;
         transition: .2s;
         text-shadow: 0 0 2px black;
-        box-shadow: 0 0 2px black;
         color: #00adef;
         font-family: "Futura Demi C";
         font-size: 14px;
@@ -1686,6 +1692,48 @@ body {
       font-size: 18px;
       font-weight: 400;
       line-height: 24px; }
+  .main .request__background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.51);
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center; }
+    .main .request__background.active {
+      display: flex; }
+  .main .request__wrap {
+    position: relative;
+    display: flex;
+    width: 80%;
+    background: white;
+    flex-direction: column;
+    padding: 70px 0; }
+  .main .request__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/request_close.png");
+    border: 0 none;
+    cursor: pointer;
+    outline: none; }
+  .main .request__title {
+    color: #001334;
+    font-family: "Futura Demi C";
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center; }
+  .main .request__subtitle {
+    color: #001334;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Futura Book C";
+    font-weight: 600;
+    margin-top: 10px; }
   .main__header {
     position: relative;
     display: flex;
@@ -1890,7 +1938,6 @@ body {
       border: 2px solid #ffffff;
       transition: .2s;
       text-shadow: 0 0 2px black;
-      box-shadow: 0 0 2px black;
       color: #00adef;
       font-family: "Futura Demi C";
       font-size: 14px;
@@ -2863,7 +2910,7 @@ body {
     .main__item .item__wrap {
       position: relative;
       display: flex;
-      width: 100%;
+      width: 72%;
       max-width: 870px;
       justify-content: flex-start;
       align-items: flex-start;
@@ -3118,7 +3165,6 @@ body {
         border: 2px solid #ffffff;
         transition: .2s;
         text-shadow: 0 0 2px black;
-        box-shadow: 0 0 2px black;
         color: #00adef;
         font-family: "Futura Demi C";
         font-size: 14px;
@@ -3286,6 +3332,10 @@ body {
             transition: .2s;
             transform: rotate(45deg);
             margin-right: 15%; }
+        .main__item .item__adds .adds__slider .slider__next {
+          right: -35px !important; }
+        .main__item .item__adds .adds__slider .slider__prev {
+          left: -35px !important; }
       .main__item .item__adds .adds__item {
         position: relative;
         display: flex;
@@ -3454,7 +3504,7 @@ body {
   .footer__menu {
     position: relative;
     display: flex;
-    width: max-content;
+    width: 18%;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; }

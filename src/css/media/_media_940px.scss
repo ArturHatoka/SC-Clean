@@ -22,6 +22,9 @@
         }
       }
     }
+    &__cart .cart__preview{
+      right: -45px;
+    }
   }
 
   .main{
@@ -46,11 +49,19 @@
       &__wrap{
         max-width: 980px;
       }
+      &__box .box__title{
+        width: 75%;
+        line-height: 28px;
+      }
     }
     & .goods{
 
       &__wrap{
         max-width: 980px;
+      }
+      &__box .box__title{
+        width: 75%;
+        line-height: 28px;
       }
     }
 
@@ -84,5 +95,47 @@
         width: 80%;
       }
     }
+
+    & .slider__next{
+      right: -50px!important;
+    }
+    & .slider__prev{
+      left: -50px!important;
+    }
+
+    &__partners{
+      width: 90%;
+    }
+    &__text{
+      width: 90%;
+    }
+    &__request .request__form {
+      width: 90%;
+      & input{
+        width: 28%;
+        margin: 0 5px;
+      }
+    }
+  }
+  .footer{
+
+    &__wrap{
+      width: 90%;
+    }
+    &__menu .menu__list li {
+      margin-right: 30px;
+    }
+    &__work_time .work_time__box .box__row span {
+      width: 125%;
+    }
+  }
+  .main__contacts .contacts__wrap{
+    width: 90%;
+  }
+  .main__category .category__item{
+    justify-content: space-between;
+  }
+  .main__category .category__item .item__wrap:nth-child(3n+2) {
+    margin: 0 0 30px;
   }
 }

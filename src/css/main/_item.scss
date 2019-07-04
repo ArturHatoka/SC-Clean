@@ -15,7 +15,7 @@
     &__wrap {
       position: relative;
       display: flex;
-      width: 100%;
+      width: 72%;
       max-width: 870px;
       justify-content: flex-start;
       align-items: flex-start;
@@ -370,6 +370,14 @@
         &__slider{
           @include slider;
           padding: 0;
+          & .slider{
+            &__next{
+              right: -35px !important;
+            }
+            &__prev{
+              left: -35px !important;
+            }
+          }
         }
         &__item{
           position: relative;

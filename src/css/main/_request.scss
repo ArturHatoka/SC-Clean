@@ -2,11 +2,13 @@
   position: relative;
   display: flex;
   width: 100%;
-  background: url("../img/main_request_background.png") top center no-repeat;
+  background: url("../img/main_request_background.png") center center no-repeat, #2a9010;
   flex-direction: column;
   padding: 100px 0;
   align-items: center;
   justify-content: center;
+  background-size: cover;
+  background-blend-mode: multiply;
   .request{
 
     &__title{
@@ -43,5 +45,55 @@
       font-weight: 400;
       line-height: 24px;
     }
+  }
+}
+.request{
+  &__background{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.51);
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    &.active{
+      display: flex;
+    }
+  }
+  &__wrap{
+    position: relative;
+    display: flex;
+    width: 80%;
+    background: white;
+    flex-direction: column;
+    padding: 70px 0;
+  }
+  &__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: url("../img/request_close.png");
+    border: 0 none;
+    cursor: pointer;
+    outline: none;
+  }
+  &__title{
+    color: #001334;
+    font-family: "Futura Demi C";
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+  }
+  &__subtitle{
+    color: #001334;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Futura Book C";
+    font-weight: 600;
+    margin-top: 10px;
   }
 }

@@ -38,6 +38,19 @@ $(document).ready(function () {
             $(this).children('.cart__preview').removeClass("active");
         }
     );
+    //вызов всплывающей формы
+    $('.intro__button').click(
+        function () {
+            $('.request__background').addClass("active");
+        }
+    );
+    //закрытие всплывающей формы
+    $('.request__close').click(
+        function () {
+            $('.request__background').removeClass("active");
+        }
+    );
+
     //слайдер клиенты
     $('.clients__slider').slick({
         infinite: true,
@@ -68,7 +81,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 375,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
